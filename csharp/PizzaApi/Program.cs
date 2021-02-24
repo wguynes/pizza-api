@@ -20,6 +20,7 @@ namespace PizzaApi
             using (var serviceScope = host.Services.CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<PizzaContext>();
+                context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
                 context.Database.Migrate();
             }
