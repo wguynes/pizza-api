@@ -24,7 +24,10 @@ namespace PizzaApi
             services.AddControllers();
 
             string connection = Configuration.GetConnectionString("PizzaDb");
-            services.AddDbContext<PizzaContext>(options => options.UseSqlite(connection));
+            services.AddDbContext<PizzaContext>(options =>
+            {
+                options.UseSqlite(connection);
+            });
             
             services.AddScoped<IRepository<PizzaContext>, Repository<PizzaContext>>();
             services.AddScoped<ITimeRepository, TimeRepository>();

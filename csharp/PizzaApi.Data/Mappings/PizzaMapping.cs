@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using PizzaAPI.Data.Models;
 
@@ -25,7 +27,11 @@ namespace PizzaAPI.Data.Mappings
                     .IsRequired()
                     .HasColumnName("sauce");
 
-                entity.Property(e => e.Toppings).HasColumnName("toppings");
+                entity.Property(e => e.Toppings).HasColumnName("toppings")
+                    .HasConversion(
+                        x => string.Join(',', x),
+                        x => x.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList()
+                    );
             });
         }
     }

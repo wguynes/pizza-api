@@ -11,7 +11,7 @@ namespace PizzaAPI.Data.Models
 
         public short PizzaId { get; set; }
         public string Name { get; set; }
-        public string[] Toppings { get; set; }
+        public ICollection<string> Toppings { get; set; }
         public string Crust { get; set; }
         public string Sauce { get; set; }
 
