@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApi", "PizzaApi\PizzaApi.csproj", "{28B2737F-53A0-40E0-8315-BEC38EC4F3E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApi.Data", "PizzaApi.Data\PizzaApi.Data.csproj", "{9C5F99AB-D494-4ED3-A6E4-85C10BD4322F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApi.Tests", "PizzaApi.Tests\PizzaApi.Tests.csproj", "{BF33F765-BF26-4359-A21D-B0FD1DBC67AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28B2737F-53A0-40E0-8315-BEC38EC4F3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B2737F-53A0-40E0-8315-BEC38EC4F3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B2737F-53A0-40E0-8315-BEC38EC4F3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B2737F-53A0-40E0-8315-BEC38EC4F3E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5F99AB-D494-4ED3-A6E4-85C10BD4322F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5F99AB-D494-4ED3-A6E4-85C10BD4322F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5F99AB-D494-4ED3-A6E4-85C10BD4322F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5F99AB-D494-4ED3-A6E4-85C10BD4322F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF33F765-BF26-4359-A21D-B0FD1DBC67AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF33F765-BF26-4359-A21D-B0FD1DBC67AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF33F765-BF26-4359-A21D-B0FD1DBC67AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF33F765-BF26-4359-A21D-B0FD1DBC67AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
